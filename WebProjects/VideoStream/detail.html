@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail | VideoStream | An Awesome Video Streaming Website</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/images/logo1.svg" rel="shortcut icon" type="image/png" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bd-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/logo1.svg"
+            alt=""
+            width="36"
+            height="30"
+            class="d-inline-block align-text-top"
+          />
+          VideoStream
+        </a>
+        <form class="d-flex" action="search.html">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            name="q"
+            id="input_search"
+          />
+          <button class="btn btn-outline-warning" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <section class="mt-4 px-4">
+      <div class="container">
+        <div class="row">
+          <div class="col" style="display: flex; justify-content: center">
+            <iframe
+              width="560"
+              height="315"
+              id="player_iframe"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              style="max-width: 90vw"
+            ></iframe>
+          </div>
+          <div class="col">
+            <h3 id="video_title"></h3>
+            <h5 id="channel_name"></h5>
+            <p
+              id="video_description"
+              style="max-height: 12rem; overflow: scroll"
+            ></p>
+            <p>
+              Views: <span id="video_views"></span> &emsp; &emsp; Likes:
+              <span id="video_likes"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4">
+        <h4>Suggestions</h4>
+        <div
+          class="hstack gap-3"
+          style="overflow: scroll; align-items: start"
+          id="suggestions_container"
+        ></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="index.html"
+              class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+            >
+              <img src="assets/images/logo1.svg" style="height: 2rem" />
+            </a>
+            <span class="text-muted">© Harsh and Team</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-muted"
+                href="https://github.com/HarshPatani"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/github.png"
+                  style="height: 1.5rem"
+                  onmouseover="this.style.backgroundColor='405DE6'"
+                  onmouseout="this.style.backgroundColor=''"
+                />
+              </a>
+            </li>
+
+            <li class="ms-3">
+              <a
+                class="text-muted"
+                href="https://www.instagram.com/harshpatani_/"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/instagram.png"
+                  style="height: 1.5rem"
+                  onmouseover="this.style.backgroundColor=' #405DE6'"
+                  onmouseout="this.style.backgroundColor=''"
+                />
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-muted"
+                href="https://www.twitter.com/"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/twitter.png"
+                  style="height: 1.5rem"
+                  onmouseover="this.style.backgroundColor='405DE6'"
+                  onmouseout="this.style.backgroundColor=''"
+                />
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/detail.js"></script>
+  </body>
+</html>
